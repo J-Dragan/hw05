@@ -1,0 +1,201 @@
+Script started on 2025-03-11 22:50:53-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="106" LINES="28"]
+[?2004h]0;jdragan@LAPTOP-BQI955NU: ~/cs1b/HW/hw05[01;32mjdragan@LAPTOP-BQI955NU[00m:[01;34m~/cs1b/HW/hw05[00m$ dart[Kte[K[K[Kte
+[?2004lTue Mar 11 22:50:58 PDT 2025
+[?2004h]0;jdragan@LAPTOP-BQI955NU: ~/cs1b/HW/hw05[01;32mjdragan@LAPTOP-BQI955NU[00m:[01;34m~/cs1b/HW/hw05[00m$ ls -1
+[?2004lheaders.h
+makefile
+personal.h
+[0m[01;32ms14[0m
+s14.cpp
+s14.o
+s14.scr
+s14f.cpp
+s14f.o
+[01;32ms15[0m
+s15-16f.cpp
+s15-16f.o
+s15.cpp
+s15.o
+s15.scr
+[01;32ms16[0m
+s16.cpp
+s16.o
+s16.scr
+[01;32ms17[0m
+s17.cpp
+s17.o
+s17.scr
+s17f.cpp
+s17f.o
+[01;32ms18[0m
+s18.cpp
+s18.o
+s18.scr
+s18f.cpp
+s18f.o
+[01;32ms19[0m
+s19.cpp
+s19.o
+s19.scr
+s19f.cpp
+s19f.o
+[01;32ms20[0m
+s20.cpp
+s20.o
+s20.scr
+s20f.cpp
+s20f.o
+[01;32ms22[0m
+s22.cpp
+s22.o
+s22f.cpp
+s22f.o
+[?2004h]0;jdragan@LAPTOP-BQI955NU: ~/cs1b/HW/hw05[01;32mjdragan@LAPTOP-BQI955NU[00m:[01;34m~/cs1b/HW/hw05[00m$ ls -1[1Pdateexitgdb ./s19[4Pls -1[1Pdateexitgdb ./s18[4Pls -1[1Pdateexitgdb ./s17[3Pls -1 [2Pdateexitgdb ./s16[4Pls -1[1Pdateexitgdb ./s15[4Pls -1[1Pdateexitgdb ./s14make ggdb[4Pls -1[1Pdateexitgdb ./s14[4Pls -1[1P-1dateexitstopgdb ./s14[4Pls -1[1Pdateexitcleargdb ./s14rm s14.scrls[Kscript s14.scrls[Kcleargdb ./s14ls[Kmake ggdb[Kclear[1Pmakevi s22.cpp[6Pmakevi s20f.cpp[3Ps20f.cpp[4Pmakeclear[1Pmakes20f.cppvi s20f.cpp[7Pmakevi s22.cpp[6Pmakeclear[1Pmake ggdbls[Kgdb ./s14[4Pclear[3Plsscript s14.scrls[Kscript s14.scrls[Kcleargdb ./s14ls[Kmake ggdbls[Kgdb ./s14[4Pclear[3Plsscript s14.scrls[Krm s14.scr[1Pgdb ./s14[4Pclear[1Pexitdatels -1gdb ./s14[5Pstopexitdatels-1 -1gdb ./s14[5Pexitdatels -1make ggdbgdb ./s14[5Pexitdatels -1gdb ./s15[5Pexitdatels -1gdb ./s16[5Pexitdatels -1 gdb ./s17[5Pexitdatels -1gdb ./s18[5Pexitdatels -1gdb ./s19[5Pexitdatels -1[Kls -1[1Pdateexitgdb ./s19[4Pls -1[1Pdateexitgdb ./s18[4Pls -1gdb ./s18[5Pexitdatels -1gdb ./s19[5Pexitdatels -1[Kvl[Kalgrind --leak-check-[K=full ./s20
+[?2004l==3182== Memcheck, a memory error detector
+==3182== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==3182== Using Valgrind-3.24.0 and LibVEX; rerun with -h for copyright info
+==3182== Command: ./s20
+==3182== 
+==3182== 
+==3182== HEAP SUMMARY:
+==3182==     in use at exit: 0 bytes in 0 blocks
+==3182==   total heap usage: 7 allocs, 7 frees, 73,928 bytes allocated
+==3182== 
+==3182== All heap blocks were freed -- no leaks are possible
+==3182== 
+==3182== For lists of detected and suppressed errors, rerun with: -s
+==3182== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[?2004h]0;jdragan@LAPTOP-BQI955NU: ~/cs1b/HW/hw05[01;32mjdragan@LAPTOP-BQI955NU[00m:[01;34m~/cs1b/HW/hw05[00m$ gdb /[K./sw[K20
+[?2004l[35;1mGNU gdb (Ubuntu 15.0.50.20240403-0ubuntu1) 15.0.50.20240403-git[m
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[m>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+[32m<https://www.gnu.org/software/gdb/bugs/>[m.
+Find the GDB manual and other documentation resources online at:
+    <[32mhttp://www.gnu.org/software/gdb/documentation/[m>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32m./s20[m...
+[?2004h(gdb) l
+[?2004l1	[01;34m#include[m [31m"headers.h"[m
+2	
+3	[32mint[m [01mmain[m[31m()[m [31m{[m
+4		[32mint[m [31m**[md[31m,[m s[31m,[m i[31m;[m
+5		d [31m=[m [01;34mnew[m [32mint[m[31m*[[m[35m5[m[31m];[m
+6		[01;34mfor[m[31m([mi[31m=[m[35m0[m[31m;[mi[31m<[m[35m5[m[31m;++[mi[31m)[m
+7			d[31m[[mi[31m][m [31m=[m [01;34mnew[m [32mint[m[31m[[m[35m8[m[31m];[m
+8		s [31m=[m [01mSum2[m[31m([md[31m,[m[35m5[m[31m,[m[35m8[m[31m);[m
+9		[01;34mfor[m[31m([mi[31m=[m[35m0[m[31m;[mi[31m<[m[35m5[m[31m;++[mi[31m)[m
+10			[01;34mdelete[m [31m[][m d[31m[[mi[31m];[m
+[?2004h(gdb) b 8
+[?2004lBreakpoint 1 at [34m0x11b9[m: file [32ms20.cpp[m, line 8.
+[?2004h(gdb) run
+[?2004lStarting program: [32m/home/jdragan/cs1b/HW/hw05/s20[m 
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <[32mhttps://debuginfod.ubuntu.com[m>
+[?2004hEnable debuginfod for this session? (y or [n]) n
+[?2004lDebuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib/x86_64-linux-gnu/libthread_db.so.1[m".
+
+Breakpoint 1, [33mmain[m () at [32ms20.cpp[m:8
+8		s [31m=[m [01mSum2[m[31m([md[31m,[m[35m5[m[31m,[m[35m8[m[31m);[m
+[?2004h[?2004l[?2004h(gdb) l
+[?2004l3	[32mint[m [01mmain[m[31m()[m [31m{[m
+4		[32mint[m [31m**[md[31m,[m s[31m,[m i[31m;[m
+5		d [31m=[m [01;34mnew[m [32mint[m[31m*[[m[35m5[m[31m];[m
+6		[01;34mfor[m[31m([mi[31m=[m[35m0[m[31m;[mi[31m<[m[35m5[m[31m;++[mi[31m)[m
+7			d[31m[[mi[31m][m [31m=[m [01;34mnew[m [32mint[m[31m[[m[35m8[m[31m];[m
+8		s [31m=[m [01mSum2[m[31m([md[31m,[m[35m5[m[31m,[m[35m8[m[31m);[m
+9		[01;34mfor[m[31m([mi[31m=[m[35m0[m[31m;[mi[31m<[m[35m5[m[31m;++[mi[31m)[m
+10			[01;34mdelete[m [31m[][m d[31m[[mi[31m];[m
+11		[01;34mdelete[m [31m[][m d[31m;[m
+12	[31m}[m
+[?2004h(gdb) p d
+[?2004l[36m$1[m = (int **[36m[m) [34m0x55555556b2b0[m
+[?2004h(gdb) p s
+[?2004l[36m$2[m = 32767
+[?2004h(gdb) p i
+[?2004l[36m$3[m = 5
+[?2004h(gdb) p &i
+[?2004l[36m$4[m = (int *[36m[m) [34m0x7fffffffdf90[m
+[?2004h(gdb) p & [Ks
+[?2004l[36m$5[m = (int *[36m[m) [34m0x7fffffffdf94[m
+[?2004h(gdb) s
+[?2004l[33mSum2[m ([36mp[m=0x55555556b2b0, [36mr[m=5, [36mc[m=8) at [32ms20f.cpp[m:2
+2		[32mint[m j[31m,[m k[31m,[m sum [31m=[m [35m0[m[31m;[m
+[?2004h[?2004l[?2004h(gdb) l
+[?2004l1	[32mint[m [01mSum2[m[31m([m[32mint[m [31m**[mp[31m,[m[32mint[m r[31m,[m[32mint[m c[31m)[m [31m{[m
+2		[32mint[m j[31m,[m k[31m,[m sum [31m=[m [35m0[m[31m;[m
+3		[01;34mfor[m[31m([mj[31m=[m[35m0[m[31m;[mj[31m<[mr[31m;++[mj[31m)[m [31m{[m
+4			[01;34mfor[m[31m([mk[31m=[m[35m0[m[31m;[mk[31m<[mc[31m;++[mk[31m)[m [31m{[m
+5				sum [31m+=[m [31m*(*([mp[31m+[mj[31m)+[mk[31m);[m
+6			[31m}[m
+7		[31m}[m
+8		[01;34mreturn[m sum[31m;[m
+9	[31m}[m
+[?2004h(gdb) b 8
+[?2004lBreakpoint 2 at [34m0x5555555552aa[m: file [32ms20f.cpp[m, line 8.
+[?2004h(gdb) continua
+[?2004lUndefined command: "continua".  Try "help".
+[?2004h(gdb) continua[Ke
+[?2004lContinuing.
+
+Breakpoint 2, [33mSum2[m ([36mp[m=0x55555556b2b0, [36mr[m=5, [36mc[m=8) at [32ms20f.cpp[m:8
+8		[01;34mreturn[m sum[31m;[m
+[?2004h[?2004l[?2004h(gdb) l
+[?2004l3		[01;34mfor[m[31m([mj[31m=[m[35m0[m[31m;[mj[31m<[mr[31m;++[mj[31m)[m [31m{[m
+4			[01;34mfor[m[31m([mk[31m=[m[35m0[m[31m;[mk[31m<[mc[31m;++[mk[31m)[m [31m{[m
+5				sum [31m+=[m [31m*(*([mp[31m+[mj[31m)+[mk[31m);[m
+6			[31m}[m
+7		[31m}[m
+8		[01;34mreturn[m sum[31m;[m
+9	[31m}[m
+[?2004h(gdb) p sum
+[?2004l[36m$6[m = 0
+[?2004h(gdb) p &sum
+[?2004l[36m$7[m = (int *[36m[m) [34m0x7fffffffdf7c[m
+[?2004h(gdb) p j
+[?2004l[36m$8[m = 5
+[?2004h(gdb) p &j
+[?2004l[36m$9[m = (int *[36m[m) [34m0x7fffffffdf74[m
+[?2004h(gdb) p &k
+[?2004l[36m$10[m = (int *[36m[m) [34m0x7fffffffdf78[m
+[?2004h(gdb) p &j
+[?2004l[36m$11[m = (int *[36m[m) [34m0x7fffffffdf74[m
+[?2004h(gdb) s
+[?2004l9	[31m}[m
+[?2004h[?2004l[?2004h(gdb) l[Ks
+[?2004l[33mmain[m () at [32ms20.cpp[m:9
+9		[01;34mfor[m[31m([mi[31m=[m[35m0[m[31m;[mi[31m<[m[35m5[m[31m;++[mi[31m)[m
+[?2004h[?2004l[?2004h(gdb) l
+[?2004l4		[32mint[m [31m**[md[31m,[m s[31m,[m i[31m;[m
+5		d [31m=[m [01;34mnew[m [32mint[m[31m*[[m[35m5[m[31m];[m
+6		[01;34mfor[m[31m([mi[31m=[m[35m0[m[31m;[mi[31m<[m[35m5[m[31m;++[mi[31m)[m
+7			d[31m[[mi[31m][m [31m=[m [01;34mnew[m [32mint[m[31m[[m[35m8[m[31m];[m
+8		s [31m=[m [01mSum2[m[31m([md[31m,[m[35m5[m[31m,[m[35m8[m[31m);[m
+9		[01;34mfor[m[31m([mi[31m=[m[35m0[m[31m;[mi[31m<[m[35m5[m[31m;++[mi[31m)[m
+10			[01;34mdelete[m [31m[][m d[31m[[mi[31m];[m
+11		[01;34mdelete[m [31m[][m d[31m;[m
+12	[31m}[m
+13	
+[?2004h(gdb) p d
+[?2004l[36m$12[m = (int **[36m[m) [34m0x55555556b2b0[m
+[?2004h(gdb) p [7m0x55555556b2b0[27m[C[C[C[C[C[C[C[C0x55555556b2b0
+[?2004l[36m$13[m = 93824992326320
+[?2004h(gdb) continue
+[?2004lContinuing.
+[Inferior 1 (process 3219) exited normally]
+[?2004h[?2004l[?2004h(gdb) exit
+[?2004l[?2004h]0;jdragan@LAPTOP-BQI955NU: ~/cs1b/HW/hw05[01;32mjdragan@LAPTOP-BQI955NU[00m:[01;34m~/cs1b/HW/hw05[00m$ ext[Kit
+[?2004lexit
+
+Script done on 2025-03-11 22:55:02-07:00 [COMMAND_EXIT_CODE="0"]
