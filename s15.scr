@@ -1,0 +1,139 @@
+Script started on 2025-03-11 21:51:09-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="106" LINES="28"]
+[?2004h]0;jdragan@LAPTOP-BQI955NU: ~/cs1b/HW/hw05[01;32mjdragan@LAPTOP-BQI955NU[00m:[01;34m~/cs1b/HW/hw05[00m$ date
+[?2004lTue Mar 11 21:51:11 PDT 2025
+[?2004h]0;jdragan@LAPTOP-BQI955NU: ~/cs1b/HW/hw05[01;32mjdragan@LAPTOP-BQI955NU[00m:[01;34m~/cs1b/HW/hw05[00m$ ls-1 1[1P1 -1
+[?2004lheaders.h
+makefile
+personal.h
+[0m[01;32ms14[0m
+s14.cpp
+s14.o
+s14.scr
+s14f.cpp
+s14f.o
+[01;32ms15[0m
+s15-16f.cpp
+s15-16f.o
+s15.cpp
+s15.o
+s15.scr
+[01;32ms16[0m
+s16.cpp
+s16.o
+[01;32ms17[0m
+s17.cpp
+s17.o
+s17f.cpp
+s17f.o
+[01;32ms18[0m
+s18.cpp
+s18.o
+s18f.cpp
+s18f.o
+[01;32ms19[0m
+s19.cpp
+s19.o
+s19f.cpp
+s19f.o
+[01;32ms20[0m
+s20.cpp
+s20.o
+s20f.cpp
+s20f.o
+[01;32ms22[0m
+s22.cpp
+s22.o
+s22f.cpp
+s22f.o
+[?2004h]0;jdragan@LAPTOP-BQI955NU: ~/cs1b/HW/hw05[01;32mjdragan@LAPTOP-BQI955NU[00m:[01;34m~/cs1b/HW/hw05[00m$ gdb ./s15
+[?2004l[35;1mGNU gdb (Ubuntu 15.0.50.20240403-0ubuntu1) 15.0.50.20240403-git[m
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[m>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+[32m<https://www.gnu.org/software/gdb/bugs/>[m.
+Find the GDB manual and other documentation resources online at:
+    <[32mhttp://www.gnu.org/software/gdb/documentation/[m>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32m./s15[m...
+[?2004h(gdb) l
+[?2004l1	[01;34m#include[m [31m"headers.h"[m
+2	
+3	[32mint[m [01mmain[m[31m()[m [31m{[m
+4		[32mint[m s[31m;[m
+5		[32mint[m d[31m[[m[35m5[m[31m][m [31m=[m [31m{[m[35m1[m[31m,[m[35m1[m[31m,[m[35m1[m[31m,[m[35m1[m[31m,[m[35m1[m[31m}[m[31m;[m
+6		s [31m=[m [01mSum[m[31m([md[31m,[m[35m5[m[31m);[m
+7		cout [31m<<[m [31m"s: "[m [31m<<[m s[31m;[m
+8		[01;34mreturn[m [35m0[m[31m;[m
+9	
+10	[31m}[m
+[?2004h(gdb) b6 6[C
+[?2004lBreakpoint 1 at [34m0x11c7[m: file [32ms15.cpp[m, line 6.
+[?2004h(gdb) run
+[?2004lStarting program: [32m/home/jdragan/cs1b/HW/hw05/s15[m 
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <[32mhttps://debuginfod.ubuntu.com[m>
+[?2004hEnable debuginfod for this session? (y or [n]) n
+[?2004lDebuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib/x86_64-linux-gnu/libthread_db.so.1[m".
+
+Breakpoint 1, [33mmain[m () at [32ms15.cpp[m:6
+6		s [31m=[m [01mSum[m[31m([md[31m,[m[35m5[m[31m);[m
+[?2004h[?2004l[?2004h(gdb) p s
+[?2004l[36m$1[m = 1819242352
+[?2004h(gdb) p$[K &s
+[?2004l[36m$2[m = (int *[36m[m) [34m0x7fffffffdf8c[m
+[?2004h(gdb) p d
+[?2004l[36m$3[m = {1, 1, 1, 1, 1}
+[?2004h(gdb) p &d
+[?2004l[36m$4[m = (int (*[36m[m)[5]) [34m0x7fffffffdf90[m
+[?2004h(gdb) s
+[?2004l[33mSum[m ([36mp[m=0x7fffffffdf90, [36mk[m=5) at [32ms15-16f.cpp[m:6
+6		[32mint[m sum [31m=[m [35m0[m[31m;[m
+[?2004h[?2004l[?2004h(gdb) l
+[?2004l1	[01;34m#include[m [31m"headers.h"[m
+2	
+3	
+4	[32mint[m [01mSum[m[31m([m[32mint[m [31m*[mp[31m,[m [32mint[m k[31m)[m [31m{[m
+5		[32mint[m i[31m;[m
+6		[32mint[m sum [31m=[m [35m0[m[31m;[m
+7		[01;34mfor[m[31m([mi[31m=[m[35m0[m[31m;[mi[31m<[mk[31m;++[mi[31m)[m [31m{[m
+8			sum [31m+=[m [31m*([mp[31m+[mi[31m);[m
+9		[31m}[m
+10		[01;34mreturn[m sum[31m;[m
+[?2004h(gdb) p &i
+[?2004l[36m$5[m = (int *[36m[m) [34m0x7fffffffdf68[m
+[?2004h(gdb) p 7[K&p
+[?2004l[36m$6[m = (int **[36m[m) [34m0x7fffffffdf58[m
+[?2004h(gdb) p i
+[?2004l[36m$7[m = -134585536
+[?2004h(gdb) p p
+[?2004l[36m$8[m = (int *[36m[m) [34m0x7fffffffdf90[m
+[?2004h(gdb) b 9
+[?2004lBreakpoint 2 at [34m0x555555555263[m: file [32ms15-16f.cpp[m, line 10.
+[?2004h(gdb) continue
+[?2004lContinuing.
+
+Breakpoint 2, [33mSum[m ([36mp[m=0x7fffffffdf90, [36mk[m=5) at [32ms15-16f.cpp[m:10
+10		[01;34mreturn[m sum[31m;[m
+[?2004h[?2004l[?2004h(gdb) p sum
+[?2004l[36m$9[m = 5
+[?2004h(gdb) continua[Ke
+[?2004lContinuing.
+s: 5[Inferior 1 (process 2010) exited normally]
+[?2004h[?2004l[?2004h(gdb) p sum
+[?2004lNo symbol "sum" in current context.
+[?2004h(gdb) exit
+[?2004l[?2004h]0;jdragan@LAPTOP-BQI955NU: ~/cs1b/HW/hw05[01;32mjdragan@LAPTOP-BQI955NU[00m:[01;34m~/cs1b/HW/hw05[00m$ exit
+[?2004lexit
+
+Script done on 2025-03-11 21:55:08-07:00 [COMMAND_EXIT_CODE="0"]
